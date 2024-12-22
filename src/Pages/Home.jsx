@@ -3,7 +3,6 @@ import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Accordion from "react-bootstrap/Accordion";
 
 export default function Home() {
   return (
@@ -93,81 +92,32 @@ export default function Home() {
           </Col>
         </Row>
       </Container>
-      <h2 className="my-2">We Care About Your Health</h2>
-      <Accordion>
-        <Accordion.Item eventKey="0">
-          <Accordion.Header>Board Certified Radiologist</Accordion.Header>
-          <Accordion.Body>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            venenatis neque lectus, at sagittis mauris pulvinar a. Phasellus
-            quis mi vitae elit suscipit ultricies eu id elit. Fusce vel auctor
-            arcu, eget placerat dolor. Phasellus quis varius eros. Vivamus vel
-            ligula quis dui volutpat sagittis. Phasellus mattis libero id erat
-            eleifend viverra. Morbi aliquet ante est, et tempus massa molestie
-            vitae. Nunc est ipsum, varius quis nulla non, tincidunt ornare
-            justo. Sed ullamcorper tincidunt justo, ut ultrices est sollicitudin
-            et.{" "}
-          </Accordion.Body>
-        </Accordion.Item>
-        <Accordion.Item eventKey="1">
-          <Accordion.Header>Patient Transportation Offered</Accordion.Header>
-          <Accordion.Body>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            venenatis neque lectus, at sagittis mauris pulvinar a. Phasellus
-            quis mi vitae elit suscipit ultricies eu id elit. Fusce vel auctor
-            arcu, eget placerat dolor. Phasellus quis varius eros. Vivamus vel
-            ligula quis dui volutpat sagittis. Phasellus mattis libero id erat
-            eleifend viverra. Morbi aliquet ante est, et tempus massa molestie
-            vitae. Nunc est ipsum, varius quis nulla non, tincidunt ornare
-            justo. Sed ullamcorper tincidunt justo, ut ultrices est sollicitudin
-            et.{" "}
-          </Accordion.Body>
-        </Accordion.Item>
-        <Accordion.Item eventKey="2">
-          <Accordion.Header>Same-Day Appointment</Accordion.Header>
-          <Accordion.Body>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            venenatis neque lectus, at sagittis mauris pulvinar a. Phasellus
-            quis mi vitae elit suscipit ultricies eu id elit. Fusce vel auctor
-            arcu, eget placerat dolor. Phasellus quis varius eros. Vivamus vel
-            ligula quis dui volutpat sagittis. Phasellus mattis libero id erat
-            eleifend viverra. Morbi aliquet ante est, et tempus massa molestie
-            vitae. Nunc est ipsum, varius quis nulla non, tincidunt ornare
-            justo. Sed ullamcorper tincidunt justo, ut ultrices est sollicitudin
-            et.{" "}
-          </Accordion.Body>
-        </Accordion.Item>
-        <Accordion.Item eventKey="3">
-          <Accordion.Header>
-            Limited Preventative Full Body MRI Offered
-          </Accordion.Header>
-          <Accordion.Body>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            venenatis neque lectus, at sagittis mauris pulvinar a. Phasellus
-            quis mi vitae elit suscipit ultricies eu id elit. Fusce vel auctor
-            arcu, eget placerat dolor. Phasellus quis varius eros. Vivamus vel
-            ligula quis dui volutpat sagittis. Phasellus mattis libero id erat
-            eleifend viverra. Morbi aliquet ante est, et tempus massa molestie
-            vitae. Nunc est ipsum, varius quis nulla non, tincidunt ornare
-            justo. Sed ullamcorper tincidunt justo, ut ultrices est sollicitudin
-            et.{" "}
-          </Accordion.Body>
-        </Accordion.Item>
-        <Accordion.Item eventKey="4">
-          <Accordion.Header>Family Owned</Accordion.Header>
-          <Accordion.Body>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            venenatis neque lectus, at sagittis mauris pulvinar a. Phasellus
-            quis mi vitae elit suscipit ultricies eu id elit. Fusce vel auctor
-            arcu, eget placerat dolor. Phasellus quis varius eros. Vivamus vel
-            ligula quis dui volutpat sagittis. Phasellus mattis libero id erat
-            eleifend viverra. Morbi aliquet ante est, et tempus massa molestie
-            vitae. Nunc est ipsum, varius quis nulla non, tincidunt ornare
-            justo. Sed ullamcorper tincidunt justo, ut ultrices est sollicitudin
-            et.{" "}
-          </Accordion.Body>
-        </Accordion.Item>
-      </Accordion>
+
+      <Container>
+        <Row>
+          <Col sm={6}>
+            <h2 className="my-2">We Care About Your Health</h2>
+          </Col>
+          <Col sm={6}>
+            <Row>
+              <Col>Board Certified Radiologist</Col>
+            </Row>
+            <Row>
+              <Col>Patient Transportation Offered</Col>
+            </Row>
+            <Row>
+              <Col>Same Day Appointment</Col>
+            </Row>
+            <Row>
+              <Col>Limited Preventative Full Body MRI Offered</Col>
+            </Row>
+            <Row>
+              <Col>Family Owned and Operated</Col>
+            </Row>
+          </Col>
+        </Row>
+      </Container>
+      <h2 className="my-2">COMING SOON 2025</h2>
     </>
   );
 }
