@@ -93,7 +93,7 @@ export default function Home() {
         </Row>
       </Container>
 
-      <Container>
+      <Container className="bg-primary">
         <Row>
           <Col sm={6}>
             <h2 className="my-2">We Care About Your Health</h2>

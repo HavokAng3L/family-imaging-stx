@@ -7,8 +7,8 @@ export default function App() {
   return (
     <>
       <Navibar />
-      <Container className="text-center my-2">
-        <ResponsiveCarousel />
+      <ResponsiveCarousel />
+      <Container fluid className="text-center">
         <Home />
       </Container>
     </>
