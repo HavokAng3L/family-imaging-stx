@@ -14,13 +14,13 @@ const CardComponent: FC<CardComponentProps> = ({
   cardIndex,
   children,
 }) => (
-  <Card className="text-center" style={{ minHeight: "40em" }}>
+  <Card className="text-center" style={{ minHeight: "36em" }}>
     <Card.Img variant="top" src={getImage(200, 200, cardIndex)} />
     <Card.Body>
       <Card.Title>{cardTitle}</Card.Title>
       <Card.Text>
-        {children.map((item: string) => (
-          <p>{item}</p>
+        {children.map((item, index) => (
+          <span key={index}>{item}</span>
         ))}
       </Card.Text>
     </Card.Body>

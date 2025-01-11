@@ -6,8 +6,6 @@ type CardObject = {
   // a better solution later.
 };
 
-type ListItemObject = {
-  text: string;
-};
+type ListItemType = string;
 
-export type { CardObject, ListItemObject };
+export type { CardObject, ListItemType };
