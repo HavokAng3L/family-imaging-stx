@@ -4,20 +4,19 @@ import Col from "react-bootstrap/Col";
 import { CardObject } from "../../../types/types";
 import CardComponent from "../../Card/CardComponent";
 
+// Defines the props this component will accept.
 interface CardSectionProps {
-  cardList: Array<CardObject>;
+  CardList: Array<CardObject>;
 }
 
-const CardSection: FC<CardSectionProps> = ({ cardList }) => (
+const CardSection: FC<CardSectionProps> = ({ CardList }) => (
   <Row xs={1} md={4} className="g-4">
-    {cardList.map((cardItem, index) => (
+    {/* Extracted each field from the objects witin CardList */}
+    {CardList.map(({ body, imageUrl, title }, index) => (
       <Col key={index}>
-        <CardComponent cardTitle={cardItem.title} cardIndex={index}>
-          {cardItem.body}
-        </CardComponent>
+        <CardComponent CardBody={body} CardImage={imageUrl} CardTitle={title} />
       </Col>
     ))}
   </Row>
 );
-
 export default CardSection;

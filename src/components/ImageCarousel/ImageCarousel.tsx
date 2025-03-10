@@ -1,33 +1,33 @@
 import { FC, ReactNode } from "react";
-import imageList from "../../assets/images/ImageList";
+
+// Used for loading placeholder images during development
+// import imageList from "../../assets/images/ImageList";
 
 import Carousel from "react-bootstrap/Carousel";
+import Image2 from "../../assets/images/family-imaging-imgcar-2.jpg";
 
 interface ImageCarouselProps {
   overlayText: ReactNode;
 }
 
-const images: Array<string> = imageList(5);
+// Stored the placeholder images
+// const images: Array<string> = imageList(5);
 
 const ImageCarousel: FC<ImageCarouselProps> = ({ overlayText }) => (
-  <section className="position-relative">
+  <section className="position-relative vh-100">
     {overlayText}
-    <Carousel slide indicators={false} controls={false} interval={3000}>
-      {images.map((image, imageIndex) => {
-        return (
-          <Carousel.Item key={imageIndex}>
-            <img
-              src={image}
-              style={{
-                objectFit: "cover",
-                objectPosition: "center",
-                width: "100%",
-                minHeight: "100vh",
-              }}
-            />
-          </Carousel.Item>
-        );
-      })}
+    <Carousel slide indicators={false} controls={false} interval={4000}>
+      <Carousel.Item>
+        <img
+          src={Image2}
+          style={{
+            objectPosition: "center",
+            objectFit: "cover",
+            width: "100%",
+            height: "100vh",
+          }}
+        />
+      </Carousel.Item>
     </Carousel>
   </section>
 );

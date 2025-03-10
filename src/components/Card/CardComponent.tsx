@@ -1,29 +1,36 @@
-import { FC, ReactNode } from "react";
+import { FC } from "react";
 import Card from "react-bootstrap/Card";
-import { CardObject } from "../../types/types";
-import getImage from "../../services/ImageAPI";
+import ListGroup from "react-bootstrap/ListGroup";
 
+// Defines the properties the component WILL accept.
 interface CardComponentProps {
-  cardTitle: string;
-  cardIndex: number;
-  children: ReactNode & CardObject["body"];
+  CardTitle: string;
+  CardBody: Array<string>;
+  CardImage: string;
 }
 
+// 3.8.2025: Redo Card Component
 const CardComponent: FC<CardComponentProps> = ({
-  cardTitle = "Default",
-  cardIndex,
-  children,
+  CardTitle,
+  CardBody,
+  CardImage,
 }) => (
-  <Card className="text-center" style={{ minHeight: "36em" }}>
-    <Card.Img variant="top" src={getImage(200, 200, cardIndex)} />
+  <Card className="shadow">
     <Card.Body>
-      <Card.Title>{cardTitle}</Card.Title>
-      <Card.Text>
-        {children.map((item, index) => (
-          <span key={index}>{item}</span>
-        ))}
-      </Card.Text>
+      <Card.Title>{CardTitle}</Card.Title>
+      <Card.Img
+        src={CardImage}
+        width={"250px"}
+        height={"250px"}
+        style={{ objectFit: "cover" }}
+        alt={CardTitle + " Image"}
+      />
     </Card.Body>
+    <ListGroup className="list-group-flush">
+      {CardBody.map((item, index) => (
+        <ListGroup.Item key={index}>{item}</ListGroup.Item>
+      ))}
+    </ListGroup>
   </Card>
 );
 
