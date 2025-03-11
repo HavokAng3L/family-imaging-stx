@@ -27,13 +27,19 @@ const Home: FC = () => (
                   Trust our Family to Care for Yours
                 </h2>
                 <p className="fs-6">
-                  At Family Imaging of South Texas, we provide the most
-                  advanced, up-to-date MRI scans with a patient-first approach.
-                  Our team of experienced radiologists and technologists ensure
-                  you receive the most accurate MRI imaging in a comfortable,
-                  caring environment. Whether you or your family come in for an
-                  X-Ray, Ultrasound or Full Body MRI, you can trust the family
-                  at Family Imaging of South Texas to care for yours.
+                  Family Imaging of South Texas is dedicated to providing safe,
+                  timely, cost-effective, and high quality medical imaging
+                  services to the residents of the Rio Grande Valley. Our
+                  mission is to provide exceptional care through teamwork,
+                  compassion, patient-centered practices and continuous
+                  innovation. At Family Imaging of South Texas, we pride
+                  ourselves on providing the most advanced imaging services with
+                  a patient-first approach. Our team of highly skilled
+                  radiologists and technologists are committed to providing you
+                  with the most accurate MRI imaging in a comfortable and caring
+                  environment. Whether you or your family needs an x-ray,
+                  ultrasound or full body MRI, you can trust our family to
+                  provide the highest standard of care.
                 </p>
                 <Marquee>
                   <h2 className="px-2 fw-bold">
