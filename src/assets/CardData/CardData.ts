@@ -1,5 +1,4 @@
 import { CardObject } from "../../types/types";
-import getImage from "../../services/ImageAPI";
 
 // 3.8.2025: Add field to CardObject to contain location of images.
 export const CardData: Array<CardObject> = [
