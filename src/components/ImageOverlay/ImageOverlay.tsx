@@ -8,8 +8,25 @@ interface ImageOverlayProps {
 
 // TODO: props will be text, size, shape & primary/secondary colors.
 const ImageOverlay: FC<ImageOverlayProps> = ({ OverlayText }) => (
-  <div className="d-flex flex-column justify-content-end align-items-end position-absolute top-0 left-0 w-100 h-100">
-    <h4 className="fw-bold display-2">{OverlayText}</h4>
+  <div className="position-absolute w-100 h-100 top-0 left-0">
+    <div
+      style={{
+        position: "absolute",
+        width: "200px",
+        height: "350px",
+        bottom: "20px",
+        right: "20%",
+        borderTopRightRadius: "5px",
+        borderTopLeftRadius: "5px",
+      }}
+    >
+      <h4
+        className="fw-bold"
+        style={{ position: "absolute", color: "white", zIndex: 6 }}
+      >
+        {OverlayText}
+      </h4>
+    </div>
   </div>
 );
 

@@ -10,7 +10,7 @@ interface CardSectionProps {
 }
 
 const CardSection: FC<CardSectionProps> = ({ CardList }) => (
-  <Row xs={1} md={4} className="g-4">
+  <Row xs={1} md={2} lg={4} className="g-4">
     {/* Extracted each field from the objects witin CardList */}
     {CardList.map(({ body, imageUrl, title }, index) => (
       <Col key={index}>

@@ -7,6 +7,9 @@ import Carousel from "react-bootstrap/Carousel";
 import ImageOverlay from "../ImageOverlay/ImageOverlay";
 import Image1 from "../../assets/images/MRI_UX_THEATRE.jpg";
 import Image2 from "../../assets/images/family-imaging-imgcar-2.jpg";
+import Image3 from "../../assets/images/UXIMG1.webp";
+import Image4 from "../../assets/images/UXIMG2.webp";
+import MRIVideo from "../../assets/video/UXVIDEO.mp4";
 
 interface ImageCarouselProps {
   overlayText: ReactNode;
@@ -42,7 +45,44 @@ const ImageCarousel: FC<ImageCarouselProps> = ({ overlayText }) => (
             height: "100vh",
           }}
         />
-        <ImageOverlay OverlayText={"Hello"} />
+        <ImageOverlay OverlayText={"Featuring In-Bore Cinema by UX Platform"} />
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          src={Image3}
+          style={{
+            objectPosition: "center",
+            objectFit: "cover",
+            width: "100%",
+            height: "100vh",
+          }}
+        />
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          src={Image4}
+          style={{
+            objectPosition: "center",
+            objectFit: "cover",
+            width: "100%",
+            height: "100vh",
+          }}
+        />
+      </Carousel.Item>
+      <Carousel.Item>
+        <video
+          muted
+          autoPlay
+          loop
+          style={{
+            objectPosition: "center",
+            objectFit: "cover",
+            width: "100%",
+            height: "100vh",
+          }}
+        >
+          <source src={MRIVideo} type="video/mp4" />
+        </video>
       </Carousel.Item>
     </Carousel>
   </section>

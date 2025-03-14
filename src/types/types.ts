@@ -13,4 +13,13 @@ type CardObject = {
 
 type ListItemType = string;
 
-export type { CardObject, ListItemType };
+type PricingCardObject = {
+  productName: string;
+  productDescription: string;
+  productSpecifics: Array<string>;
+  productPrice: number;
+  productUpcoming: boolean;
+
+}
+
+export type { CardObject, ListItemType, PricingCardObject };

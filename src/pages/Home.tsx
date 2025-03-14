@@ -6,7 +6,7 @@ import Col from "react-bootstrap/Col";
 
 // 3.9.2025: Considering redo of this section
 const Home: FC = () => (
-  <section id="home" className="">
+  <section id="home">
     <Container
       fluid
       className="vh-100 d-flex justify-content-center align-items-center"

@@ -6,31 +6,49 @@ import ListGroup from "react-bootstrap/ListGroup";
 interface CardComponentProps {
   CardTitle: string;
   CardBody: Array<string>;
-  CardImage: string;
+  CardImage?: string;
+  CardSubHeading?: string;
+  CardPricing?: number;
+  upcoming?: boolean;
 }
 
 // 3.8.2025: Redo Card Component
+// 3.13.2025: Additions Made to Card Component to add pricing and subheading
+// TODO: Reference Bootstrap Card API
 const CardComponent: FC<CardComponentProps> = ({
   CardTitle,
   CardBody,
   CardImage,
+  CardSubHeading,
+  CardPricing,
+  upcoming,
 }) => (
   <Card className="shadow">
     <Card.Body>
       <Card.Title>{CardTitle}</Card.Title>
-      <Card.Img
-        src={CardImage}
-        width={"250px"}
-        height={"250px"}
-        style={{ objectFit: "cover" }}
-        alt={CardTitle + " Image"}
-      />
+      {upcoming ? <p className="fw-bold">(COMING SOON)</p> : null}
+      {/* This conditional checks if CardImage has been passed down as a prop */}
+
+      {CardImage ? (
+        <Card.Img
+          src={CardImage}
+          width={"250px"}
+          height={"250px"}
+          style={{ objectFit: "cover" }}
+          alt={CardTitle + " Image"}
+        />
+      ) : null}
     </Card.Body>
+    {CardSubHeading ? <Card.Header>{CardSubHeading}</Card.Header> : null}
     <ListGroup className="list-group-flush">
       {CardBody.map((item, index) => (
         <ListGroup.Item key={index}>{item}</ListGroup.Item>
       ))}
     </ListGroup>
+    {/* This conditional checks if CardPricing has been passed down as a prop from the parent. */}
+    {CardPricing ? (
+      <Card.Footer className="fw-bold display-6">${CardPricing}</Card.Footer>
+    ) : null}
   </Card>
 );
 
