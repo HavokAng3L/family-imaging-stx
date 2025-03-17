@@ -1,9 +1,9 @@
 import { CardObject } from "../../types/types";
 
-import MRI from "../images/MRI.jpg";
-import XRAY from "../images/XRAY.jpg";
-import CT from "../images/CT_NEW.jpg";
-import ULTRA from "../images/ULTRASOUND.jpg";
+import MRI from "src/assets/images/MRI.jpg";
+import XRAY from "src/assets/images/XRAY.jpg";
+import CT from "src/assets/images/CT_NEW.jpg";
+import ULTRA from "src/assets/images/ULTRASOUND.jpg";
 
 // 3.8.2025: Add field to CardObject to contain location of images.
 export const ServicesData: Array<CardObject> = [
