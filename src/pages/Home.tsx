@@ -14,7 +14,9 @@ const Home: FC = () => (
       <Row className="">
         <Col lg={6} sm={12} className="">
           <img
-            src="src/assets/images/family-imaging-imgcar-1.jpg"
+            // ON BUILDS, reference only the directory of where the static items are stored
+            // IN THIS CASE, "images" stores the images that will be static, therefore reference the directory where they are stored.
+            src="images/FAMIMG_BACK.jpg"
             alt=""
             className="img-fluid rounded"
           />

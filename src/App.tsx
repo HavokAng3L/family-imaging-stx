@@ -13,7 +13,7 @@ const App: FC = () => (
   <div style={{ backgroundColor: "#cccccc" }}>
     <NavigationBar />
     <ImageCarousel
-      overlayText={
+      overlay={
         // Overlay Text for the Image Carouel at the beginning of the page.
         <CarouselOverlay>
           {/* Animation for heading */}

@@ -4,7 +4,6 @@ import { motion } from "motion/react";
 import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
-import Logo from "../../../assets/images/family-imaging-logo.png";
 
 // TODO: Get Screen Width to change styling based on screen width
 // TODO: Turn the Screen Width effect into a context
@@ -39,7 +38,7 @@ const NavigationBar: FC = () => {
         {/* 3-8-25: Changed to official business banner */}
         <Navbar.Brand href="#home" className="py-0">
           <img
-            src={Logo}
+            src={"images/family-imaging-logo.png"}
             alt="Family Imaging of South Texas Logo"
             className="d-inline-block align-top p-0"
             // If the window width is above or equal to the test value

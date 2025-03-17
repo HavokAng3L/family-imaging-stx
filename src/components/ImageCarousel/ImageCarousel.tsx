@@ -1,31 +1,26 @@
 import { FC, ReactNode } from "react";
+import ImageOverlay from "../ImageOverlay/ImageOverlay";
 
 // Used for loading placeholder images during development
 // import imageList from "../../assets/images/ImageList";
 
 import Carousel from "react-bootstrap/Carousel";
-import ImageOverlay from "../ImageOverlay/ImageOverlay";
-import Image1 from "../../assets/images/MRI_UX_THEATRE.jpg";
-import Image2 from "../../assets/images/family-imaging-imgcar-2.jpg";
-import Image3 from "../../assets/images/UXIMG1.webp";
-import Image4 from "../../assets/images/UXIMG2.webp";
-import MRIVideo from "../../assets/video/UXVIDEO.mp4";
 
 interface ImageCarouselProps {
-  overlayText: ReactNode;
+  overlay: ReactNode;
 }
 
 // Stored the placeholder images
 // const images: Array<string> = imageList(5);
 
-const ImageCarousel: FC<ImageCarouselProps> = ({ overlayText }) => (
+const ImageCarousel: FC<ImageCarouselProps> = ({ overlay }) => (
   <section className="position-relative vh-100">
-    {overlayText}
+    {overlay}
     <Carousel slide indicators={false} controls={false} interval={4000}>
       {/* First Image for Carousel */}
       <Carousel.Item>
         <img
-          src={Image2}
+          src={"images/family-imaging-imgcar-2.jpg"}
           style={{
             objectPosition: "center",
             objectFit: "cover",
@@ -37,7 +32,7 @@ const ImageCarousel: FC<ImageCarouselProps> = ({ overlayText }) => (
       {/* Second Image for Carousel */}
       <Carousel.Item className="position-relative">
         <img
-          src={Image1}
+          src={"images/MRI_UX_THEATRE.jpg"}
           style={{
             objectPosition: "center",
             objectFit: "cover",
@@ -49,7 +44,7 @@ const ImageCarousel: FC<ImageCarouselProps> = ({ overlayText }) => (
       </Carousel.Item>
       <Carousel.Item>
         <img
-          src={Image3}
+          src={"images/UXIMG1.webp"}
           style={{
             objectPosition: "center",
             objectFit: "cover",
@@ -60,7 +55,7 @@ const ImageCarousel: FC<ImageCarouselProps> = ({ overlayText }) => (
       </Carousel.Item>
       <Carousel.Item>
         <img
-          src={Image4}
+          src={"images/UXIMG2.webp"}
           style={{
             objectPosition: "center",
             objectFit: "cover",
@@ -81,7 +76,7 @@ const ImageCarousel: FC<ImageCarouselProps> = ({ overlayText }) => (
             height: "100vh",
           }}
         >
-          <source src={MRIVideo} type="video/mp4" />
+          <source src={"video/UXVIDEOEDIT.mp4"} type="video/mp4" />
         </video>
       </Carousel.Item>
     </Carousel>
