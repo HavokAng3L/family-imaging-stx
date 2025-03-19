@@ -7,18 +7,31 @@ import { ServicesData } from "../assets/CardData/ServicesData";
 import { PricingData } from "../assets/CardData/PricingData";
 
 const Services: FC = () => (
-  <section id="services" className="px-2 text-center">
+  <section id="services" className="px-2 text-center border-top">
     <h2 className="fw-bold display-4">Our Services</h2>
-    <div className="border-top" style={{ paddingBottom: "2rem" }}>
-      <h3 className="display-6">Imaging</h3>
-      <h4>
+    <div
+      style={{
+        paddingBottom: "2rem",
+        backgroundColor: "hsl(203, 96%, 20%)",
+        borderColor: "#949292",
+      }}
+      className="border border-2 rounded shadow mt-3"
+    >
+      <h3 className="display-6 text-white">Imaging</h3>
+      <h4 className="text-white">
         We specialize in a wide range of MRI imaging services to meet your
         healthcare needs.
       </h4>
       {/* Accepts an array of CardObjects */}
       <CardSection CardList={ServicesData} />
     </div>
-    <div className="border-top" style={{ paddingBottom: "2rem" }}>
+    <div
+      style={{
+        paddingBottom: "2rem",
+        backgroundColor: "rgba(255, 255, 255, 0.25)",
+      }}
+      className="border border-2 rounded shadow mt-3"
+    >
       <h3 className="display-6">Pricing</h3>
       <h4>
         We provide top-quality services at competitive prices, ensuring great
@@ -26,9 +39,12 @@ const Services: FC = () => (
       </h4>
       <PriceSection CardList={PricingData} />
     </div>
-    <div className="border-top" style={{ paddingBottom: "2rem" }}>
-      <h3 className="display-6">We Care About Your Health</h3>
-      <h4 className="">
+    <div
+      style={{ paddingBottom: "2rem", backgroundColor: "hsl(203, 96%, 20%)" }}
+      className="border border-2 rounded shadow mt-3"
+    >
+      <h3 className="display-6 text-white">We Care About Your Health</h3>
+      <h4 className="text-white">
         Our mission is to combine compassionate care and cutting-edge technology
         to provide rapid and accurate results.
       </h4>

@@ -2,9 +2,9 @@ import { ListItemType } from "../../types/types";
 
 const ListData: Array<ListItemType> = [
   "Board Certified Radiologist",
-  "Patient transportation",
+  "Patient Transportation",
   "Same Day Appointment",
-  "Limited Preventative Full Body MRI",
+  "Preventative Full Body MRI",
   "Family Owned",
 ];
 

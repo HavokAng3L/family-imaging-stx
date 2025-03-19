@@ -10,7 +10,7 @@ import CarouselOverlay from "./components/CarouselOverlay/CarouselOverlay";
 import Container from "react-bootstrap/Container";
 
 const App: FC = () => (
-  <div style={{ backgroundColor: "#cccccc" }}>
+  <div style={{ backgroundColor: "hsl(0%,0%,0%)" }}>
     <NavigationBar />
     <ImageCarousel
       overlay={
@@ -20,7 +20,7 @@ const App: FC = () => (
           <motion.h1
             initial={{ opacity: 0, translateY: 15 }}
             animate={{ opacity: 100, translateY: 0 }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
             className="display-1"
           >
             Family Imaging of South Texas
@@ -29,7 +29,7 @@ const App: FC = () => (
           <motion.h2
             initial={{ opacity: "0%" }}
             animate={{ opacity: "100%" }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 0.5, delay: 0.9 }}
             className="py-1"
           >
             Advanced MRI Imaging utilizing the power of AI to deliver rapid
@@ -38,7 +38,7 @@ const App: FC = () => (
         </CarouselOverlay>
       }
     />
-    <Container>
+    <Container fluid>
       <Home />
       <Services />
       <Footer />
