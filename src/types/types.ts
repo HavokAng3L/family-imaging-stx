@@ -1,3 +1,5 @@
+// This file stores types for some of the components. They prevent errors when passing data between components.
+
 type CardObject = {
   // Provides the card title
   title: string;
@@ -17,9 +19,12 @@ type PricingCardObject = {
   productName: string;
   productDescription: string;
   productSpecifics: Array<string>;
-  productPrice: number;
   productUpcoming: boolean;
+};
 
-}
+type MapComponentObject = {
+  mapLatitude: number;
+  mapLongitude: number;
+};
 
-export type { CardObject, ListItemType, PricingCardObject };
+export type { CardObject, ListItemType, PricingCardObject, MapComponentObject };

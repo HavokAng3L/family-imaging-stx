@@ -17,6 +17,16 @@ export const ServicesData: Array<CardObject> = [
     imageUrl: "images/XRAY.jpg",
   },
   {
+    title: "Ultrasound",
+    body: [
+      "Echocardiography",
+      "Vascular",
+      "General Abdominal",
+      "Soft Tissue Study",
+    ],
+    imageUrl: "images/ULTRASOUND.jpg",
+  },
+  {
     title: "CT (Coming Soon)",
     body: [
       "Orthopedics",
@@ -27,15 +37,5 @@ export const ServicesData: Array<CardObject> = [
       "Cardiac Calcium Scoring",
     ],
     imageUrl: "images/CT.jpg",
-  },
-  {
-    title: "Ultrasound",
-    body: [
-      "Echocardiography",
-      "Vascular",
-      "General Abdominal",
-      "Soft Tissue Study",
-    ],
-    imageUrl: "images/ULTRASOUND.jpg",
   },
 ];

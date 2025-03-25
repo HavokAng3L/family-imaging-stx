@@ -48,7 +48,7 @@ const CardComponent: FC<CardComponentProps> = ({
     <motion.div initial="hidden" whileInView="visible" variants={body}>
       <Card className="shadow">
         <Card.Body>
-          <Card.Title>{CardTitle}</Card.Title>
+          <Card.Title className="fs-4 fw-bold">{CardTitle}</Card.Title>
           {upcoming ? <p className="fw-bold">(COMING SOON)</p> : null}
           {/* This conditional checks if CardImage has been passed down as a prop */}
 
@@ -67,7 +67,9 @@ const CardComponent: FC<CardComponentProps> = ({
           {CardSubHeading ? <Card.Header>{CardSubHeading}</Card.Header> : null}
           <ListGroup className="list-group-flush">
             {CardBody.map((item, index) => (
-              <ListGroup.Item key={index}>{item}</ListGroup.Item>
+              <ListGroup.Item key={index} className="fw-bold">
+                {item}
+              </ListGroup.Item>
             ))}
           </ListGroup>
         </motion.div>

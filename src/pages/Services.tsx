@@ -8,7 +8,7 @@ import { PricingData } from "../assets/CardData/PricingData";
 
 const Services: FC = () => (
   <section id="services" className="px-2 text-center border-top">
-    <h2 className="fw-bold display-4">Our Services</h2>
+    <h2 className="fw-bold display-4 fw-bold">Our Services</h2>
     <div
       style={{
         paddingBottom: "2rem",
@@ -17,7 +17,7 @@ const Services: FC = () => (
       }}
       className="border border-2 rounded shadow mt-3"
     >
-      <h3 className="display-6 text-white">Imaging</h3>
+      <h3 className="display-6 text-white fw-bold">Imaging</h3>
       <h4 className="text-white">
         We specialize in a wide range of MRI imaging services to meet your
         healthcare needs.
@@ -32,7 +32,6 @@ const Services: FC = () => (
       }}
       className="border border-2 rounded shadow mt-3"
     >
-      <h3 className="display-6">Pricing</h3>
       <h4>
         We provide top-quality services at competitive prices, ensuring great
         value without compromising excellence.
@@ -43,7 +42,9 @@ const Services: FC = () => (
       style={{ paddingBottom: "2rem", backgroundColor: "hsl(203, 96%, 20%)" }}
       className="border border-2 rounded shadow mt-3"
     >
-      <h3 className="display-6 text-white">We Care About Your Health</h3>
+      <h3 className="display-6 text-white fw-bold">
+        We Care About Your Health
+      </h3>
       <h4 className="text-white">
         Our mission is to combine compassionate care and cutting-edge technology
         to provide rapid and accurate results.

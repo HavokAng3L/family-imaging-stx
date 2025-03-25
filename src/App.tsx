@@ -5,9 +5,12 @@ import Home from "./pages/Home";
 import Services from "./pages/Services";
 import NavigationBar from "./components/layout/NavigationBar/NavigationBar";
 import Footer from "./components/layout/Footer/Footer";
+import Contact from "./pages/Contact";
+
 import ImageCarousel from "./components/ImageCarousel/ImageCarousel";
 import CarouselOverlay from "./components/CarouselOverlay/CarouselOverlay";
 import Container from "react-bootstrap/Container";
+import ButtonComponent from "./components/Button/ButtonComponent";
 
 const App: FC = () => (
   <div style={{ backgroundColor: "hsl(0%,0%,0%)" }}>
@@ -35,12 +38,16 @@ const App: FC = () => (
             Advanced MRI Imaging utilizing the power of AI to deliver rapid
             diagnosis.
           </motion.h2>
+          <ButtonComponent large linkTo="#contact">
+            Contact Us!
+          </ButtonComponent>
         </CarouselOverlay>
       }
     />
     <Container fluid>
       <Home />
       <Services />
+      <Contact />
       <Footer />
     </Container>
   </div>

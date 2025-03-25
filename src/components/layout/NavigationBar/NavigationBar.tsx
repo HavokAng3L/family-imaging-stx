@@ -45,7 +45,7 @@ const NavigationBar: FC = () => {
             // the width of the image will stay the same.
             // if the test fails, the image will shrink.
             // TODO: Get rid of magic value (Or make it constant)
-            width={windowWidth >= 768 ? "200px" : "150px"}
+            width={windowWidth >= 768 ? "250px" : "150px"}
           />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -64,15 +64,16 @@ const NavigationBar: FC = () => {
               </motion.div>
             </Nav.Link>
           </Nav>
-          <Navbar.Text>
-            <h3>Contact Us! </h3>
+          <Navbar.Text className="p-0">
             <motion.a
               href="tel:956-420-9536"
               whileTap={{ color: "gray" }}
               style={{ textDecoration: "none" }}
+              className="m-0 p-0"
             >
-              956-420-9536
+              <p>(956) 420-9536</p>
             </motion.a>
+            <p className="m-0 p-0">Hablamos Español</p>
           </Navbar.Text>
         </Navbar.Collapse>
       </Container>

@@ -10,24 +10,17 @@ interface PricingCardProps {
 }
 
 const PriceSection: FC<PricingCardProps> = ({ CardList }) => (
-  <Row xs={1} md={2} lg={4} className="g-4 px-2">
+  <Row xs={1} md={2} lg={4} className="g-4 px-2 d-flex justify-content-center">
     {/* Extracted each field from the objects witin PricingCardObject */}
     {CardList.map(
       (
-        {
-          productName,
-          productPrice,
-          productDescription,
-          productSpecifics,
-          productUpcoming,
-        },
+        { productName, productDescription, productSpecifics, productUpcoming },
         index
       ) => (
         <Col key={index}>
           <CardComponent
             CardBody={productSpecifics}
             CardTitle={productName}
-            CardPricing={productPrice}
             CardSubHeading={productDescription}
             upcoming={productUpcoming}
           />

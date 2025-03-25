@@ -3,7 +3,7 @@ import { PricingCardObject } from "../../types/types";
 export const PricingData: Array<PricingCardObject> = [
   {
     productName: "Whole Body MRI",
-    productDescription: "Full Body MRI Scan",
+    productDescription: "",
     productSpecifics: [
       "Comprehensive Head & Torso Scan with spinal evaluation.",
       "Disc herniation",
@@ -11,6 +11,5 @@ export const PricingData: Array<PricingCardObject> = [
       "Spinal degeneration",
     ],
     productUpcoming: true,
-    productPrice: 2499,
   },
 ];
