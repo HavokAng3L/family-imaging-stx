@@ -9,9 +9,8 @@ const Contact: FC = () => (
         paddingBottom: "2rem",
         backgroundColor: "hsl(203, 96%, 20%)",
         borderColor: "#949292",
-        height: "100vh",
       }}
-      className="border border-2 rounded shadow mt-3 d-flex flex-column flex-md-row justify-content-between align-items-center"
+      className="vh-100 border border-2 rounded shadow mt-3 d-flex flex-column flex-md-row justify-content-between align-items-center"
     >
       <MapComponent mapLatitude={26.267111} mapLongitude={-98.199783} />
       <div className="text-center w-100 text-white d-flex flex-column align-items-center justify-content-center">

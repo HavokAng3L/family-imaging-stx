@@ -5,7 +5,7 @@ import Container from "react-bootstrap/Container";
 // 3.9.2025: Considering redo of this section
 const Home: FC = () => (
   <section id="home">
-    <Container className="vh-100 d-flex flex-column flex-lg-row justify-content-center align-items-center">
+    <Container className="min-vh-100 d-flex flex-column flex-lg-row justify-content-center align-items-center">
       <div className="me-lg-2">
         <img
           // ON BUILDS, reference only the directory of where the static items are stored
