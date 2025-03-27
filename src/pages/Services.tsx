@@ -7,7 +7,7 @@ import { ServicesData } from "../assets/CardData/ServicesData";
 import { PricingData } from "../assets/CardData/PricingData";
 
 const Services: FC = () => (
-  <section id="services" className="px-2 text-center border-top">
+  <section id="services" className="px-3 text-center border-top">
     <h2 className="fw-bold display-4 fw-bold">Our Services</h2>
     <div
       style={{
@@ -15,7 +15,7 @@ const Services: FC = () => (
         backgroundColor: "hsl(203, 96%, 20%)",
         borderColor: "#949292",
       }}
-      className="border border-2 rounded shadow mt-3"
+      className="border border-2 rounded shadow mt-3 px-2"
     >
       <h3 className="display-6 text-white fw-bold">Imaging</h3>
       <h4 className="text-white">
@@ -30,7 +30,7 @@ const Services: FC = () => (
         paddingBottom: "2rem",
         backgroundColor: "rgba(255, 255, 255, 0.25)",
       }}
-      className="border border-2 rounded shadow mt-3"
+      className="border border-2 rounded shadow mt-3 px-3"
     >
       <h4>
         We provide top-quality services at competitive prices, ensuring great

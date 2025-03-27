@@ -14,8 +14,8 @@ const ImageOverlay: FC<ImageOverlayProps> = ({ OverlayText }) => (
         position: "absolute",
         width: "200px",
         height: "350px",
-        bottom: "20px",
-        right: "20%",
+        bottom: "0px",
+        right: "0px",
         borderTopRightRadius: "5px",
         borderTopLeftRadius: "5px",
       }}

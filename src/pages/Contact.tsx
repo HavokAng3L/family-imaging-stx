@@ -2,22 +2,19 @@ import { FC } from "react";
 import MapComponent from "../components/Map/MapComponent";
 
 const Contact: FC = () => (
-  <section id="contact" className="px-2 text-center border-top h-auto">
+  <section id="contact" className="px-3 text-center border-top">
     <h2 className="fw-bold display-4">Contact Us</h2>
     <div
       style={{
-        paddingBottom: "2rem",
         backgroundColor: "hsl(203, 96%, 20%)",
         borderColor: "#949292",
       }}
-      className="vh-100 border border-2 rounded shadow mt-3 d-flex flex-column flex-md-row justify-content-between align-items-center"
+      className="border border-2 rounded shadow mt-3 d-flex justify-content-evenly align-items-center flex-column-reverse flex-md-row p-4"
     >
       <MapComponent mapLatitude={26.267111} mapLongitude={-98.199783} />
-      <div className="text-center w-100 text-white d-flex flex-column align-items-center justify-content-center">
-        <div
-          className="bg-primary border border-2 rounded my-2"
-          style={{ width: "80%", padding: "15px" }}
-        >
+      {/* Contact Info/Address */}
+      <div className="text-center text-white d-flex flex-column align-items-center justify-content-center">
+        <div className="bg-primary border border-2 rounded px-4">
           <h3>Family Imaging of South Texas</h3>
           <h4>4161 Crosspoint Blvd, Edinburg, TX 78539</h4>
           <ul className="list-unstyled">

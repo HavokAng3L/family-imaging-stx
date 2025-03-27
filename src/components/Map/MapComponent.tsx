@@ -13,9 +13,10 @@ const MapComponent: FC<MapComponentObject> = ({
   return (
     <MapContainer
       center={[mapLatitude, mapLongitude]}
-      zoom={18}
       scrollWheelZoom={false}
-      className="w-100 h-100"
+      zoom={16}
+      style={{ width: "100%", height: "50dvh" }}
+      className="m-4 border border-2 rounded"
     >
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> contributors'

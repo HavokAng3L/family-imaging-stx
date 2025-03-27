@@ -1,5 +1,4 @@
 import { FC, ReactNode } from "react";
-import ImageOverlay from "../ImageOverlay/ImageOverlay";
 
 // Used for loading placeholder images during development
 // import imageList from "../../assets/images/ImageList";
@@ -14,7 +13,7 @@ interface ImageCarouselProps {
 // const images: Array<string> = imageList(5);
 
 const ImageCarousel: FC<ImageCarouselProps> = ({ overlay }) => (
-  <section className="position-relative vh-100">
+  <section className="position-relative min-vh-100">
     {overlay}
     <Carousel slide indicators={false} controls={false} interval={4000}>
       {/* First Image for Carousel */}
@@ -40,7 +39,6 @@ const ImageCarousel: FC<ImageCarouselProps> = ({ overlay }) => (
             height: "100vh",
           }}
         />
-        <ImageOverlay OverlayText={"Featuring In-Bore Cinema by UX Platform"} />
       </Carousel.Item>
       <Carousel.Item>
         <img
