@@ -80,7 +80,7 @@ const NavigationBar: FC = () => {
               style={{ textDecoration: "none" }}
               className="m-0 p-0"
             >
-              <p className="p-0 m-0 fs-5">(956) 420-9536</p>
+              <p className="p-0 m-0 fs-3 fw-bold">(956) 420-9536</p>
             </motion.a>
             <p className="m-0 py-1 fw-bold fs-5">Hablamos Español</p>
           </Navbar.Text>
