@@ -5,36 +5,42 @@ export const ServicesData: Array<CardObject> = [
   {
     title: "MRI",
     body: [
-      "10-15 Minute Scans.",
-      "Utilizing cutting-edge AI Technology for a significant improvement in accuracy.",
-      "Entertaining and Comforting MRI Experience with in-bore cinema (UX Platform).",
+      [
+        "10-15 Minute Scans.",
+        "Cutting-edge AI Technology",
+        "Entertaining MRI Experience with in-bore cinema (UX Platform).",
+      ],
     ],
     imageUrl: "images/MRI.jpg",
   },
   {
     title: "X-Ray",
-    body: ["General Chest", "Abdomen", "Pelvis", "Musculoskeletal"],
-    imageUrl: "images/XRAY.jpg",
+    body: [["General Chest", "Abdomen", "Pelvis", "Musculoskeletal"]],
+    imageUrl: "images/XRAY.webp",
   },
   {
     title: "Ultrasound",
     body: [
-      "Echocardiography",
-      "Vascular",
-      "General Abdominal",
-      "Soft Tissue Study",
+      [
+        "Echocardiography",
+        "Vascular",
+        "General Abdominal",
+        "Soft Tissue Study",
+      ],
     ],
     imageUrl: "images/ULTRASOUND.jpg",
   },
   {
     title: "CT (Coming Soon)",
     body: [
-      "Orthopedics",
-      "Angiography",
-      "Head",
-      "Chest",
-      "Abdominal",
-      "Cardiac Calcium Scoring",
+      [
+        "Orthopedics",
+        "Angiography",
+        "Head",
+        "Chest",
+        "Abdominal",
+        "Cardiac Calcium Scoring",
+      ],
     ],
     imageUrl: "images/CT.jpg",
   },

@@ -7,7 +7,7 @@ import ListGroup from "react-bootstrap/ListGroup";
 // Defines the properties the component WILL accept.
 interface CardComponentProps {
   CardTitle: string;
-  CardBody: Array<string>;
+  CardBody: Array<string> | Array<Array<string>>;
   CardImage?: string;
   CardSubHeading?: string;
   CardPricing?: number;
@@ -46,10 +46,15 @@ const CardComponent: FC<CardComponentProps> = ({
 
   return (
     <motion.div initial="hidden" whileInView="visible" variants={body}>
-      <Card className="shadow">
+      <Card className="border-3" style={{ borderColor: "hsl(203, 96%, 20%)" }}>
         <Card.Body>
-          <Card.Title className="fs-4 fw-bold">{CardTitle}</Card.Title>
-          {upcoming ? <p className="fw-bold">(COMING SOON)</p> : null}
+          <div
+            className="rounded p-2 text-white"
+            style={{ backgroundColor: "hsl(203, 96%, 20%)" }}
+          >
+            <Card.Title className="fs-4 fw-bold p-2">{CardTitle}</Card.Title>
+            {upcoming ? <p className="fw-bold">(COMING SOON)</p> : null}
+          </div>
           {/* This conditional checks if CardImage has been passed down as a prop */}
 
           {CardImage ? (
@@ -59,17 +64,26 @@ const CardComponent: FC<CardComponentProps> = ({
               height={"250px"}
               style={{ objectFit: "cover" }}
               alt={CardTitle + " Image"}
+              className="mt-3"
             />
           ) : null}
         </Card.Body>
 
         <motion.div variants={items}>
           {CardSubHeading ? <Card.Header>{CardSubHeading}</Card.Header> : null}
-          <ListGroup className="list-group-flush">
+          <ListGroup>
             {CardBody.map((item, index) => (
-              <ListGroup.Item key={index} className="fw-bold">
-                {item}
-              </ListGroup.Item>
+              <div
+                key={index}
+                className="p-3"
+                style={{ backgroundColor: "hsl(203, 96%, 20%)" }}
+              >
+                {item.map((item: string, index: number) => (
+                  <ListGroup.Item key={index} className="fw-bold shadow-lg">
+                    {item}
+                  </ListGroup.Item>
+                ))}
+              </div>
             ))}
           </ListGroup>
         </motion.div>

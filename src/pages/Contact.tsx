@@ -14,7 +14,10 @@ const Contact: FC = () => (
       <MapComponent mapLatitude={26.267111} mapLongitude={-98.199783} />
       {/* Contact Info/Address */}
       <div className="text-center text-white d-flex flex-column align-items-center justify-content-center">
-        <div className="bg-primary border border-2 rounded px-4">
+        <div
+          className="border border-2 rounded px-4"
+          style={{ backgroundColor: "hsl(350, 84%, 30.00%)" }}
+        >
           <h3>Family Imaging of South Texas</h3>
           <h4>4161 Crosspoint Blvd, Edinburg, TX 78539</h4>
           <ul className="list-unstyled">
