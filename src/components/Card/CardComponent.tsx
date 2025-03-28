@@ -7,7 +7,7 @@ import ListGroup from "react-bootstrap/ListGroup";
 // Defines the properties the component WILL accept.
 interface CardComponentProps {
   CardTitle: string;
-  CardBody: Array<string> | Array<Array<string>>;
+  CardBody: Array<Array<string>>;
   CardImage?: string;
   CardSubHeading?: string;
   CardPricing?: number;
