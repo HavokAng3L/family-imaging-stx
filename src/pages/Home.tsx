@@ -12,7 +12,7 @@ const Home: FC = () => (
           // IN THIS CASE, "images" stores the images that will be static, therefore reference the directory where they are stored.
           src="images/FAMIMG_BACK.jpg"
           alt=""
-          className="img-fluid rounded"
+          className="img-fluid rounded w-75"
         />
       </div>
       <div className="">
