@@ -47,7 +47,7 @@ const Contact: FC = () => (
           <h3>Hours</h3>
           <ul className="list-unstyled">
             <li>
-              <b>Mon - Fri</b>: 8:00 AM - 5:00 PM
+              <b>Mon - Fri</b>: 8:00 AM - 6:00 PM
             </li>
             <li>
               <b>Sat - Sun</b>: By Appointment
