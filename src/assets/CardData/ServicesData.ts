@@ -8,7 +8,7 @@ export const ServicesData: Array<CardObject> = [
       [
         "10-15 Minute Scans.",
         "Cutting-edge AI Technology",
-        "Entertaining MRI Experience with in-bore cinema (UX Platform).",
+        "Entertaining MRI Experience with In-Bore Cinema.",
       ],
     ],
     imageUrl: "images/MRI.jpg",
