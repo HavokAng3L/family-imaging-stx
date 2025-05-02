@@ -7,7 +7,7 @@ export const PricingData: Array<PricingCardObject> = [
     productSpecifics: [
       [
         "Features: ",
-        "Head & Torso with Spinal Evaluation",
+        "Head, Torso & Pelvis with Spinal Evaluation",
         "NOTE: Does not include heart screening",
       ],
       [
@@ -21,6 +21,6 @@ export const PricingData: Array<PricingCardObject> = [
         "Brain Aneurysms",
       ],
     ],
-    productUpcoming: true,
+    productUpcoming: false,
   },
 ];

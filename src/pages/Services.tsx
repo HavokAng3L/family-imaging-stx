@@ -17,7 +17,6 @@ const Services: FC = () => (
       }}
       className="border border-2 rounded shadow mt-3 px-2"
     >
-      <h3 className="display-6 text-white fw-bold">Imaging</h3>
       <h4 className="text-white">
         We specialize in a wide range of MRI imaging services to meet your
         healthcare needs.
@@ -36,8 +35,53 @@ const Services: FC = () => (
         We provide top-quality services at competitive prices, ensuring great
         value without compromising excellence.
       </h4>
-      <PriceSection CardList={PricingData} />
+      <div
+        style={{ height: "75vh" }}
+        className="d-flex flex-column justify-content-evenly align-items-center flex-md-row"
+      >
+        <div
+          className=" rounded px-3 m-2 order-2 order-md-0 d-flex flex-column justify-content-between h-50"
+          style={{
+            borderColor: "#949292",
+          }}
+        >
+          <div
+            style={{ backgroundColor: "hsl(203, 96%, 20%)" }}
+            className="text-white fs-4 rounded p-3"
+          >
+            Early Detection of Potential Health Issues
+          </div>
+          <div
+            style={{ backgroundColor: "hsl(203, 96%, 20%)" }}
+            className="text-white fs-4 rounded p-3"
+          >
+            Comprehensive Imaging for a Complete Health Overview
+          </div>
+        </div>
+        <PriceSection CardList={PricingData} />
+        <div
+          className=" rounded px-3 m-2 order-2 order-md-0 d-flex flex-column justify-content-between h-50"
+          style={{
+            borderColor: "#949292",
+            height: "500px",
+          }}
+        >
+          <div
+            style={{ backgroundColor: "hsl(203, 96%, 20%)" }}
+            className="text-white fs-4 rounded p-3"
+          >
+            AI-Enhanced Quality for Accurate Results
+          </div>
+          <div
+            style={{ backgroundColor: "hsl(203, 96%, 20%)" }}
+            className="text-white fs-4 rounded p-3"
+          >
+            Non-Invasive & Safe with No Radiation Exposure
+          </div>
+        </div>
+      </div>
     </div>
+
     <div
       style={{ paddingBottom: "2rem", backgroundColor: "hsl(203, 96%, 20%)" }}
       className="border border-2 rounded shadow mt-3"
