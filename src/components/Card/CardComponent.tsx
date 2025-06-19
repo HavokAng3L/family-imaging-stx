@@ -46,7 +46,14 @@ const CardComponent: FC<CardComponentProps> = ({
 
   return (
     <motion.div initial="hidden" whileInView="visible" variants={body}>
-      <Card className="border-3" style={{ borderColor: "hsl(203, 96%, 20%)" }}>
+      <Card
+        className="border-3"
+        style={{
+          borderColor: "hsl(203, 96%, 20%)",
+          marginTop: "5rem",
+          marginBottom: "3rem",
+        }}
+      >
         <Card.Body>
           <div
             className="rounded p-2 text-white"

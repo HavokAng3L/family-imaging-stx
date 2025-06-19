@@ -20,6 +20,7 @@ type PricingCardObject = {
   productDescription: string;
   productSpecifics: Array<Array<string>>;
   productUpcoming: boolean;
+  productPricing: number;
 };
 
 type MapComponentObject = {

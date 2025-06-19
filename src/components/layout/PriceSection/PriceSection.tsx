@@ -14,7 +14,13 @@ const PriceSection: FC<PricingCardProps> = ({ CardList }) => (
     {/* Extracted each field from the objects witin PricingCardObject */}
     {CardList.map(
       (
-        { productName, productDescription, productSpecifics, productUpcoming },
+        {
+          productName,
+          productDescription,
+          productSpecifics,
+          productUpcoming,
+          productPricing,
+        },
         index
       ) => (
         <Col key={index}>
@@ -22,6 +28,7 @@ const PriceSection: FC<PricingCardProps> = ({ CardList }) => (
             CardBody={productSpecifics}
             CardTitle={productName}
             CardSubHeading={productDescription}
+            CardPricing={productPricing}
             upcoming={productUpcoming}
           />
         </Col>
