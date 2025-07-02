@@ -50,8 +50,6 @@ const CardComponent: FC<CardComponentProps> = ({
         className="border-3"
         style={{
           borderColor: "hsl(203, 96%, 20%)",
-          marginTop: "5rem",
-          marginBottom: "3rem",
         }}
       >
         <Card.Body>

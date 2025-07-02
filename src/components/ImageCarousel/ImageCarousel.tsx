@@ -30,7 +30,7 @@ const ImageCarousel: FC<ImageCarouselProps> = ({ overlay }) => (
       </Carousel.Item>
       <Carousel.Item>
         <img
-          src={"images/Half_Full.jpg"}
+          src={"images/Half_Full.jpeg"}
           style={{
             objectPosition: "center",
             objectFit: "cover",

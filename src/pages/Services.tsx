@@ -7,7 +7,10 @@ import { ServicesData } from "../assets/CardData/ServicesData";
 import { PricingData } from "../assets/CardData/PricingData";
 
 const Services: FC = () => (
-  <section id="services" className="px-3 text-center border-top">
+  <section
+    id="services"
+    className="px-3 text-center border-top d-flex flex-column"
+  >
     <h2 className="fw-bold display-4 fw-bold">Our Services</h2>
     <div
       style={{
@@ -60,7 +63,7 @@ const Services: FC = () => (
         </div>
         <PriceSection CardList={PricingData} />
         <div
-          className=" rounded px-3 m-2 order-2 order-md-0 d-flex flex-column justify-content-between h-50"
+          className=" rounded px-3 m-2 order-2 order-md-0 d-flex flex-column justify-content-between"
           style={{
             borderColor: "#949292",
             height: "500px",
