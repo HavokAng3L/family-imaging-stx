@@ -38,12 +38,9 @@ const Services: FC = () => (
         We provide top-quality services at competitive prices, ensuring great
         value without compromising excellence.
       </h4>
-      <div
-        style={{ height: "75vh" }}
-        className="d-flex flex-column justify-content-evenly align-items-center flex-md-row"
-      >
+      <div className="h-100 d-flex flex-column justify-content-evenly align-items-center flex-lg-row">
         <div
-          className=" rounded px-3 m-2 order-2 order-md-0 d-flex flex-column justify-content-between h-50"
+          className="d-flex flex-column justify-content-evenly px-3"
           style={{
             borderColor: "#949292",
           }}
@@ -63,10 +60,9 @@ const Services: FC = () => (
         </div>
         <PriceSection CardList={PricingData} />
         <div
-          className=" rounded px-3 m-2 order-2 order-md-0 d-flex flex-column justify-content-between"
+          className="d-flex flex-column justify-content-evenly px-3"
           style={{
             borderColor: "#949292",
-            height: "500px",
           }}
         >
           <div

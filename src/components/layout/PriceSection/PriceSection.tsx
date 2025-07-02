@@ -10,7 +10,7 @@ interface PricingCardProps {
 }
 
 const PriceSection: FC<PricingCardProps> = ({ CardList }) => (
-  <Row className="">
+  <Row>
     {/* Extracted each field from the objects witin PricingCardObject */}
     {CardList.map(
       (
