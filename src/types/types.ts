@@ -28,4 +28,14 @@ type MapComponentObject = {
   mapLongitude: number;
 };
 
-export type { CardObject, ListItemType, PricingCardObject, MapComponentObject };
+type ImageObject = {
+  source: string;
+};
+
+export type {
+  CardObject,
+  ListItemType,
+  PricingCardObject,
+  MapComponentObject,
+  ImageObject,
+};

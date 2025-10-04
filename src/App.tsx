@@ -11,10 +11,13 @@ import ImageCarousel from "./components/ImageCarousel/ImageCarousel";
 import CarouselOverlay from "./components/CarouselOverlay/CarouselOverlay";
 import Container from "react-bootstrap/Container";
 import ButtonComponent from "./components/Button/ButtonComponent";
+import Reviews from "./pages/Reviews";
+import InsuranceCarousel from "./components/InsuranceCarousel/InsuranceCarousel";
 
 const App: FC = () => (
   <div style={{ backgroundColor: "hsl(0%,0%,0%)" }}>
     <NavigationBar />
+    <InsuranceCarousel />
     <ImageCarousel
       overlay={
         // Overlay Text for the Image Carouel at the beginning of the page.
@@ -47,6 +50,7 @@ const App: FC = () => (
     <Container fluid>
       <Home />
       <Services />
+      <Reviews />
       <Contact />
       <Footer />
     </Container>
