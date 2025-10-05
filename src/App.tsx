@@ -17,7 +17,6 @@ import InsuranceCarousel from "./components/InsuranceCarousel/InsuranceCarousel"
 const App: FC = () => (
   <div style={{ backgroundColor: "hsl(0%,0%,0%)" }}>
     <NavigationBar />
-    <InsuranceCarousel />
     <ImageCarousel
       overlay={
         // Overlay Text for the Image Carouel at the beginning of the page.
@@ -51,6 +50,7 @@ const App: FC = () => (
       <Home />
       <Services />
       <Reviews />
+      <InsuranceCarousel />
       <Contact />
       <Footer />
     </Container>
