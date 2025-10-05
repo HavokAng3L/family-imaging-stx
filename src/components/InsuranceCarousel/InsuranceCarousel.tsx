@@ -8,7 +8,7 @@ const InsuranceCarousel: FC = () => {
   ));
 
   return (
-    <Marquee className="position-absolute z-2" style={{ top: 150 }}>
+    <Marquee>
       {insuranceImageIcons}
     </Marquee>
   );
